@@ -340,7 +340,7 @@ function platform_armv7-mali() {
 }
 
 function platform_imx6() {
-    __default_cflags="-O2 -march=armv7-a -mfpu=neon -mtune=cortex-a9 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
+    __default_cflags="-O2 -march=armv7-a -mfpu=neon-vfpv3 -mtune=cortex-a9 -mfloat-abi=hard -ftree-vectorize -funsafe-math-optimizations"
     __default_asflags=""
     __default_makeflags="-j2"
     __platform_flags="arm armv7 neon"
